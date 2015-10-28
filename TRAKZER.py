@@ -30,7 +30,7 @@ class HelpMeOutHere(object):
         
     def switch_to_Perl(self):
         print "Switching to Perl for the 90's lolz :P"
-        proc = self.lines("perl -e \"\$|=1;for ('Waiting', 'for', 'slow', 'Perl') { print qq{\$_\n}; sleep 1 } printf '%c' x 43,112,108,101,97,115,101,32,115,97,118,101,32,109,101,32,102,114,111,109,32,116,104,101,32,114,117,115,115,105,97,110,32,103,97,110,103,32,103,117,121,115,33,10\"")
+        proc = self.lines("perl -e \"\$|=1;for (qw/Waiting for slow Perl/) { print qq{\$_\n}; sleep 1 } printf '%c' x 43,112,108,101,97,115,101,32,115,97,118,101,32,109,101,32,102,114,111,109,32,116,104,101,32,114,117,115,115,105,97,110,32,103,97,110,103,32,103,117,121,115,33,10\"")
         for line in proc:
             print line,
 
